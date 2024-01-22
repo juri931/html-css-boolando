@@ -5,11 +5,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header start */
 header{
   width: 100%;
   min-height: 50px;
   background-color: rgb(255, 139, 27);
   position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,14 +42,96 @@ li a{
   height: 25px;
 }
 
-.icons{
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  margin-top: 2px;
-}
-
 .icons a svg{
   color: white;
-  margin-left: 3px;
+}
+/* Header end */
+
+/* Main start */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: start;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: start;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.product{
+  width: 33%;
+  margin: 1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.product img{
+  position: relative;
+  width: 100%;
+}
+
+.discount{
+  position: absolute;
+  padding: 5px;
+  bottom: 80px;
+  color: white;
+  background-color: red;
+  font-size: .8rem;
+}
+
+.eco{
+  position: absolute;
+  padding: 5px;
+  bottom: 80px;
+  left: 42px;
+  color: white;
+  background-color: green;
+  font-size: .8rem;
+}
+
+.heart{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+.heart:hover{
+  color: red;
+}
+
+.info{
+  background-color: white;
+}
+
+.brand{
+  font-size: .8rem;
+  color: rgb(150, 154, 150);
+  display: block;
+}
+
+.desc{
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+.price-new{
+  font-size: .8rem;
+  font-weight: bold;
+  color: red;
+}
+
+.price-old{
+  font-size: .8rem;
+  text-decoration: line-through;
 }
